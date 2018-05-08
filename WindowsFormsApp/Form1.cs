@@ -62,5 +62,13 @@ namespace WindowsFormsApp
             FormConStr formConStr = new FormConStr();
             formConStr.ShowDialog();
         }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                button_LogIn_Click(sender, e);
+            }
+        }
     }
 }

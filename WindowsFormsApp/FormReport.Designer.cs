@@ -30,13 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReport));
             this.GetRecordsFromDateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.JournalDBDataSet = new WindowsFormsApp.JournalDBDataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.GetRecordsFromDateTableAdapter = new WindowsFormsApp.JournalDBDataSetTableAdapters.GetRecordsFromDateTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.GetRecordsFromDateBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.JournalDBDataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // GetRecordsFromDateBindingSource
+            // 
+            this.GetRecordsFromDateBindingSource.DataMember = "GetRecordsFromDate";
+            this.GetRecordsFromDateBindingSource.DataSource = this.JournalDBDataSet;
+            // 
+            // JournalDBDataSet
+            // 
+            this.JournalDBDataSet.DataSetName = "JournalDBDataSet";
+            this.JournalDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -49,16 +60,7 @@
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(583, 296);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // GetRecordsFromDateBindingSource
-            // 
-            this.GetRecordsFromDateBindingSource.DataMember = "GetRecordsFromDate";
-            this.GetRecordsFromDateBindingSource.DataSource = this.JournalDBDataSet;
-            // 
-            // JournalDBDataSet
-            // 
-            this.JournalDBDataSet.DataSetName = "JournalDBDataSet";
-            this.JournalDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // GetRecordsFromDateTableAdapter
             // 
@@ -70,8 +72,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 296);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormReport";
-            this.Text = "FormReport";
+            this.Text = "Отчет";
             this.Load += new System.EventHandler(this.FormReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GetRecordsFromDateBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.JournalDBDataSet)).EndInit();

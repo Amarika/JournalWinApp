@@ -132,8 +132,6 @@ namespace WindowsFormsApp
             FormDateOKCancel formDateOKCancel = new FormDateOKCancel();
             formDateOKCancel.ShowDialog();
 
-            FormReport formReport = new FormReport();
-            formReport.ShowDialog();
         }
     }
 }

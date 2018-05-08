@@ -29,3 +29,4 @@ D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csprojResolveAssemblyReference.cache

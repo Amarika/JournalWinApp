@@ -172,6 +172,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Graphicloads-100-Flat-Addition.ico" />
+    <Content Include="Graphicloads-100-Flat-Contact.ico" />
+    <Content Include="Graphicloads-100-Flat-Disk.ico" />
+    <Content Include="Graphicloads-100-Flat-Folder.ico" />
     <Content Include="Graphicloads-100-Flat-Pencil.ico" />
     <Content Include="Graphicloads-100-Flat-Phonebook.ico" />
   </ItemGroup>

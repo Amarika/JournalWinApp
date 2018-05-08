@@ -101,6 +101,7 @@
             this.Name = "FormDateOKCancel";
             this.ShowInTaskbar = false;
             this.Text = "FormDateOKCancel";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormDateOKCancel_FormClosed);
             this.Load += new System.EventHandler(this.FormDateOKCancel_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

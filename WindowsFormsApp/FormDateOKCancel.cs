@@ -32,8 +32,15 @@ namespace WindowsFormsApp
         {
             Properties.Settings.Default.FirstDay = dateTimePicker_FirstDay.Value.Date;
             Properties.Settings.Default.LastDay = dateTimePicker_LastDay.Value.Date;
+            
+            FormReport formReport = new FormReport();
+            formReport.ShowDialog();
 
             this.Close();
+        }
+
+        private void FormDateOKCancel_FormClosed(object sender, FormClosedEventArgs e)
+        {
         }
     }
 }

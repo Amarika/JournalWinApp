@@ -65,8 +65,6 @@ namespace WindowsFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            mainJournalBindingSource.EndEdit();
-            tableAdapterManager.UpdateAll(journalDBDataSet);
         }
 
         private void mainJournalDataGridView_NewRowNeeded(object sender, DataGridViewRowEventArgs e)
@@ -80,26 +78,41 @@ namespace WindowsFormsApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            mainJournalBindingSource.AddNew();
-            mainJournalDataGridView.CurrentRow.Cells[1].Value = Properties.Settings.Default.UserID;
-        }
-
-        private void iDGroupComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            mainJournalBindingSource.Filter = "IDGroup = \'" + Convert.ToInt32(iDGroupComboBox.SelectedValue) + "\'";
-        }
-
-        private void iDDisciplineComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            mainJournalBindingSource.Filter = "IDDiscipline = \'" + Convert.ToInt32(iDDisciplineComboBox.SelectedValue) + "\'";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            mainJournalBindingSource.Filter = null;
         }
 
         private void button4_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button_AcademicChange_Click_1(object sender, EventArgs e)
+        {
+            FormAcadenic formAcadenic = new FormAcadenic();
+            formAcadenic.ShowDialog();
+        }
+
+        private void mainJournalDataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+           }
+
+        private void toolStripButton_AddJournal_Click(object sender, EventArgs e)
+        {
+            mainJournalBindingSource.AddNew();
+            mainJournalDataGridView.CurrentRow.Cells[1].Value = Properties.Settings.Default.UserID;
+            mainJournalDataGridView.CurrentRow.Cells[2].Value = mainJournalDataGridView.Rows[mainJournalDataGridView.CurrentRow.Index-1].Cells[2].Value;
+            mainJournalDataGridView.CurrentRow.Cells[3].Value = mainJournalDataGridView.Rows[mainJournalDataGridView.CurrentRow.Index - 1].Cells[3].Value;
+        }
+
+        private void toolStripButton_Save_Click(object sender, EventArgs e)
+        {
+            mainJournalBindingSource.EndEdit();
+            mainJournalTableAdapter.Update(journalDBDataSet);
+        }
+
+        private void toolStripButton_Open_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.IDJournal = Convert.ToInt32(mainJournalDataGridView.CurrentRow.Cells[0].Value);
 
@@ -107,10 +120,9 @@ namespace WindowsFormsApp
             formJournal.Show();
         }
 
-        private void button_AcademicChange_Click_1(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            FormAcadenic formAcadenic = new FormAcadenic();
-            formAcadenic.ShowDialog();
+
         }
     }
 }
