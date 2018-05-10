@@ -1,6 +1,6 @@
-D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
-D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
-D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\JournalApp.exe.config
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\JournalApp.exe
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\JournalApp.pdb
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
@@ -14,8 +14,11 @@ D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csprojResolveAssemblyReference.cache
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormAcadenic.resources
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormAddDiscipline.resources
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormAdmin.resources
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormConStr.resources
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDate.resources
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDateOKCancel.resources
@@ -27,6 +30,6 @@ D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
-D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
-D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
-D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csprojResolveAssemblyReference.cache
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\JournalApp.exe
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\JournalApp.pdb
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormAddGroup.resources

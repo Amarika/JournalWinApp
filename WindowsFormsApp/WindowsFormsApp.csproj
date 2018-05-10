@@ -7,10 +7,25 @@
     <ProjectGuid>{855D709B-89CC-450F-AB8F-AF2B24203DD6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WindowsFormsApp</RootNamespace>
-    <AssemblyName>WindowsFormsApp</AssemblyName>
+    <AssemblyName>JournalApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -57,6 +72,24 @@
     </Compile>
     <Compile Include="FormAcadenic.Designer.cs">
       <DependentUpon>FormAcadenic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddDiscipline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddDiscipline.Designer.cs">
+      <DependentUpon>FormAddDiscipline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddGroup.Designer.cs">
+      <DependentUpon>FormAddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="FormConStr.cs">
       <SubType>Form</SubType>
@@ -116,6 +149,15 @@
     <EmbeddedResource Include="FormAcadenic.resx">
       <DependentUpon>FormAcadenic.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAddDiscipline.resx">
+      <DependentUpon>FormAddDiscipline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddGroup.resx">
+      <DependentUpon>FormAddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormConStr.resx">
       <DependentUpon>FormConStr.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,11 +215,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Graphicloads-100-Flat-Addition.ico" />
+    <Content Include="Graphicloads-100-Flat-Bank.ico" />
     <Content Include="Graphicloads-100-Flat-Contact.ico" />
     <Content Include="Graphicloads-100-Flat-Disk.ico" />
     <Content Include="Graphicloads-100-Flat-Folder.ico" />
+    <Content Include="Graphicloads-100-Flat-Myspace.ico" />
     <Content Include="Graphicloads-100-Flat-Pencil.ico" />
     <Content Include="Graphicloads-100-Flat-Phonebook.ico" />
+    <Content Include="Graphicloads-100-Flat-Recyclebin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

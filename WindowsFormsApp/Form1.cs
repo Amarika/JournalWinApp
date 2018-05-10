@@ -23,26 +23,35 @@ namespace WindowsFormsApp
             string userName = textBox_UserName.Text;
             string userPassword = textBox_UserPassword.Text;
 
-            string sqlReq = "select dbo.FunUserIDReturns('" + userName + "','" + userPassword + "')";
-
-            using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
+            if (userName == "admin" & userPassword == "admin")
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(sqlReq, conn);
-                Properties.Settings.Default.UserID = (int)cmd.ExecuteScalar();
+                FormAdmin formAdmin = new FormAdmin();
+                this.Hide();
+                formAdmin.Show();
+            }
+            else {
 
-                if (Properties.Settings.Default.UserID != 0)
+                string sqlReq = "select dbo.FunUserIDReturns('" + userName + "','" + userPassword + "')";
+
+                using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
                 {
-                    Form formJournal = new FormMain();
-                    this.Hide();
-                    formJournal.Show();
-                    
-                    
-                }
-                else
-                {
-                    MessageBox.Show("Данный пользователь не наден. Проверьте введенные данные или зарегистрируйте нового пользователя.",
-                                    "Ошибка входа", MessageBoxButtons.OK);
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(sqlReq, conn);
+                    Properties.Settings.Default.UserID = (int)cmd.ExecuteScalar();
+
+                    if (Properties.Settings.Default.UserID != 0)
+                    {
+                        Form formJournal = new FormMain();
+                        this.Hide();
+                        formJournal.Show();
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Данный пользователь не наден. Проверьте введенные данные или зарегистрируйте нового пользователя.",
+                                        "Ошибка входа", MessageBoxButtons.OK);
+                    }
                 }
             }
         }

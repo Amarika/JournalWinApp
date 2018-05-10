@@ -33,6 +33,7 @@
             this.button_Save = new System.Windows.Forms.Button();
             this.textBox_UserPassword = new System.Windows.Forms.TextBox();
             this.textBox_UserName = new System.Windows.Forms.TextBox();
+            this.queriesTableAdapter1 = new WindowsFormsApp.JournalDBDataSetTableAdapters.QueriesTableAdapter();
             this.SuspendLayout();
             // 
             // button_Cancel
@@ -99,5 +100,6 @@
         private System.Windows.Forms.Button button_Save;
         private System.Windows.Forms.TextBox textBox_UserPassword;
         private System.Windows.Forms.TextBox textBox_UserName;
+        private JournalDBDataSetTableAdapters.QueriesTableAdapter queriesTableAdapter1;
     }
 }

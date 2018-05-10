@@ -34,6 +34,8 @@
             this.date = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton_AddRecord = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_RemoveRecord = new System.Windows.Forms.ToolStripButton();
             this.toolStripSplitButton_Report = new System.Windows.Forms.ToolStripSplitButton();
             this.периодToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.journalDBDataSet = new WindowsFormsApp.JournalDBDataSet();
@@ -45,6 +47,7 @@
             this.getDatesTableAdapter1 = new WindowsFormsApp.JournalDBDataSetTableAdapters.GetDatesTableAdapter();
             this.getRecordsTableAdapter1 = new WindowsFormsApp.JournalDBDataSetTableAdapters.GetRecordsTableAdapter();
             this.queriesTableAdapter1 = new WindowsFormsApp.JournalDBDataSetTableAdapters.QueriesTableAdapter();
+            this.toolStripButton_Save = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -55,6 +58,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Snow;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -93,12 +97,33 @@
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton_AddRecord,
+            this.toolStripButton_RemoveRecord,
+            this.toolStripButton_Save,
             this.toolStripSplitButton_Report});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton_AddRecord
+            // 
+            this.toolStripButton_AddRecord.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_AddRecord.Image")));
+            this.toolStripButton_AddRecord.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_AddRecord.Name = "toolStripButton_AddRecord";
+            this.toolStripButton_AddRecord.Size = new System.Drawing.Size(119, 24);
+            this.toolStripButton_AddRecord.Text = "Добавить запись";
+            this.toolStripButton_AddRecord.Click += new System.EventHandler(this.toolStripButton_AddRecord_Click);
+            // 
+            // toolStripButton_RemoveRecord
+            // 
+            this.toolStripButton_RemoveRecord.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_RemoveRecord.Image")));
+            this.toolStripButton_RemoveRecord.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_RemoveRecord.Name = "toolStripButton_RemoveRecord";
+            this.toolStripButton_RemoveRecord.Size = new System.Drawing.Size(111, 24);
+            this.toolStripButton_RemoveRecord.Text = "Удалить запись";
+            this.toolStripButton_RemoveRecord.Click += new System.EventHandler(this.toolStripButton_RemoveRecord_Click);
             // 
             // toolStripSplitButton_Report
             // 
@@ -109,6 +134,7 @@
             this.toolStripSplitButton_Report.Name = "toolStripSplitButton_Report";
             this.toolStripSplitButton_Report.Size = new System.Drawing.Size(115, 24);
             this.toolStripSplitButton_Report.Text = "Создать отчет";
+            this.toolStripSplitButton_Report.ButtonClick += new System.EventHandler(this.toolStripSplitButton_Report_ButtonClick);
             // 
             // периодToolStripMenuItem
             // 
@@ -161,6 +187,15 @@
             // 
             this.getRecordsTableAdapter1.ClearBeforeFill = true;
             // 
+            // toolStripButton_Save
+            // 
+            this.toolStripButton_Save.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Save.Image")));
+            this.toolStripButton_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_Save.Name = "toolStripButton_Save";
+            this.toolStripButton_Save.Size = new System.Drawing.Size(148, 24);
+            this.toolStripButton_Save.Text = "Сохранить изменения";
+            this.toolStripButton_Save.Click += new System.EventHandler(this.toolStripButton_Save_Click);
+            // 
             // FormJournal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,5 +237,8 @@
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton_Report;
         private System.Windows.Forms.ToolStripMenuItem периодToolStripMenuItem;
         private System.Windows.Forms.DataGridViewButtonColumn date;
+        private System.Windows.Forms.ToolStripButton toolStripButton_RemoveRecord;
+        private System.Windows.Forms.ToolStripButton toolStripButton_AddRecord;
+        private System.Windows.Forms.ToolStripButton toolStripButton_Save;
     }
 }

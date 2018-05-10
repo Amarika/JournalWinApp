@@ -28,37 +28,46 @@ namespace WindowsFormsApp
             string userName = textBox_UserName.Text;
             string userPassword = textBox_UserPassword.Text;
 
-            string sqlReq = "insert dbo.Users values ('" + userName + "','" + userPassword + "')";
-
-            using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
+            if (queriesTableAdapter1.FunUserExist(userName) == 0)
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(sqlReq, conn);
-                cmd.ExecuteNonQuery();
+
+                string sqlReq = "insert dbo.Users values ('" + userName + "','" + userPassword + "')";
+
+                using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(sqlReq, conn);
+                    cmd.ExecuteNonQuery();
+                }
+
+
+                sqlReq = "select dbo.FunUserIDReturns('" + userName + "','" + userPassword + "')";
+
+                using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(sqlReq, conn);
+                    Properties.Settings.Default.UserID = (int)cmd.ExecuteScalar();
+                }
+
+                sqlReq = "insert into dbo.Academic(IDAcademic) values ('" + Properties.Settings.Default.UserID + "')";
+
+                using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(sqlReq, conn);
+                    cmd.ExecuteNonQuery();
+                }
+
+                Properties.Settings.Default.UserName = userName;
+                Properties.Settings.Default.UserPassword = userPassword;
+                this.Close();
             }
-
-
-            sqlReq = "select dbo.FunUserIDReturns('" + userName + "','" + userPassword + "')";
-
-            using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
+            else
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(sqlReq, conn);
-                Properties.Settings.Default.UserID = (int)cmd.ExecuteScalar();
+                MessageBox.Show("Пользователь с таким именем уже существует.",
+                                    "Ошибка регтстрации", MessageBoxButtons.OK);
             }
-                
-            sqlReq = "insert into dbo.Academic(IDAcademic) values ('" + Properties.Settings.Default.UserID + "')";
-
-            using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(sqlReq, conn);
-                cmd.ExecuteNonQuery();
-            }
-
-            Properties.Settings.Default.UserName = userName;
-            Properties.Settings.Default.UserPassword = userPassword;
-            this.Close();
         }
     }
 }

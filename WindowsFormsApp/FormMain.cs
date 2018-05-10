@@ -31,22 +31,15 @@ namespace WindowsFormsApp
             this.groupTableAdapter.Fill(this.journalDBDataSet.Group);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "journalDBDataSet.MainJournal". При необходимости она может быть перемещена или удалена.
             this.mainJournalTableAdapter.Fill(this.journalDBDataSet.MainJournal);
-            string sqlReq = "select dbo.FunUserName('" + Properties.Settings.Default.UserID + "')";
 
-           // mainJournalDataGridView.Columns[1].DefaultCellStyle.NullValue = Properties.Settings.Default.UserID;
+            label_Name.Text = queriesTableAdapter1.FunUserName(Properties.Settings.Default.UserID);
 
-            using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(sqlReq, conn);
-                label_Name.Text = (string)cmd.ExecuteScalar();
-
-            }
+            mainJournalBindingSource.Filter = "IDAcademic = \'" + Properties.Settings.Default.UserID + "\'";
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            mainJournalBindingSource.Filter = "IDAcademic = \'" + Properties.Settings.Default.UserID + "\'";
+           
         }
 
         private void button_AcademicChange_Click(object sender, EventArgs e)
