@@ -165,7 +165,6 @@
             this.tableAdapterManager.DisciplineTableAdapter = null;
             this.tableAdapterManager.GroupTableAdapter = null;
             this.tableAdapterManager.MainJournalTableAdapter = null;
-            this.tableAdapterManager.PhoneNumberTableAdapter = null;
             this.tableAdapterManager.RecordTableAdapter = this.recordTableAdapter;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApp.JournalDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;

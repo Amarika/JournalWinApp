@@ -67,11 +67,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAcadenic.cs">
+    <Compile Include="FormAcademic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAcadenic.Designer.cs">
-      <DependentUpon>FormAcadenic.cs</DependentUpon>
+    <Compile Include="FormAcademic.Designer.cs">
+      <DependentUpon>FormAcademic.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAddDiscipline.cs">
       <SubType>Form</SubType>
@@ -146,8 +146,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAcadenic.resx">
-      <DependentUpon>FormAcadenic.cs</DependentUpon>
+    <EmbeddedResource Include="FormAcademic.resx">
+      <DependentUpon>FormAcademic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddDiscipline.resx">
       <DependentUpon>FormAddDiscipline.cs</DependentUpon>

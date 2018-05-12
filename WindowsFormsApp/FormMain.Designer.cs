@@ -159,6 +159,7 @@
             // 
             this.mainJournalDataGridView.AllowUserToAddRows = false;
             this.mainJournalDataGridView.AutoGenerateColumns = false;
+            this.mainJournalDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.mainJournalDataGridView.BackgroundColor = System.Drawing.Color.Snow;
             this.mainJournalDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.mainJournalDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -277,7 +278,6 @@
             this.tableAdapterManager.DisciplineTableAdapter = null;
             this.tableAdapterManager.GroupTableAdapter = null;
             this.tableAdapterManager.MainJournalTableAdapter = null;
-            this.tableAdapterManager.PhoneNumberTableAdapter = null;
             this.tableAdapterManager.RecordTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApp.JournalDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;

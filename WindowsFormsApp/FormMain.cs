@@ -44,7 +44,7 @@ namespace WindowsFormsApp
 
         private void button_AcademicChange_Click(object sender, EventArgs e)
         {
-            FormAcadenic formAcadenic = new FormAcadenic();
+            FormAcademic formAcadenic = new FormAcademic();
             formAcadenic.Show();
         }
 
@@ -83,7 +83,7 @@ namespace WindowsFormsApp
 
         private void button_AcademicChange_Click_1(object sender, EventArgs e)
         {
-            FormAcadenic formAcadenic = new FormAcadenic();
+            FormAcademic formAcadenic = new FormAcademic();
             formAcadenic.ShowDialog();
         }
 
@@ -95,8 +95,8 @@ namespace WindowsFormsApp
         {
             mainJournalBindingSource.AddNew();
             mainJournalDataGridView.CurrentRow.Cells[1].Value = Properties.Settings.Default.UserID;
-            mainJournalDataGridView.CurrentRow.Cells[2].Value = mainJournalDataGridView.Rows[mainJournalDataGridView.CurrentRow.Index-1].Cells[2].Value;
-            mainJournalDataGridView.CurrentRow.Cells[3].Value = mainJournalDataGridView.Rows[mainJournalDataGridView.CurrentRow.Index - 1].Cells[3].Value;
+            //mainJournalDataGridView.CurrentRow.Cells[2].Value = mainJournalDataGridView.Rows[mainJournalDataGridView.CurrentRow.Index-1].Cells[2].Value;
+            //mainJournalDataGridView.CurrentRow.Cells[3].Value = mainJournalDataGridView.Rows[mainJournalDataGridView.CurrentRow.Index - 1].Cells[3].Value;
         }
 
         private void toolStripButton_Save_Click(object sender, EventArgs e)

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class FormAcadenic
+    partial class FormAcademic
     {
         /// <summary>
         /// Required designer variable.
@@ -52,7 +52,7 @@
             System.Windows.Forms.Label houseLabel;
             System.Windows.Forms.Label contractNumberLabel;
             System.Windows.Forms.Label streetLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAcadenic));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAcademic));
             this.passportSeriesTextBox = new System.Windows.Forms.TextBox();
             this.academicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.journalDBDataSet = new WindowsFormsApp.JournalDBDataSet();
@@ -326,7 +326,7 @@
             this.passportSeriesTextBox.Location = new System.Drawing.Point(106, 375);
             this.passportSeriesTextBox.Name = "passportSeriesTextBox";
             this.passportSeriesTextBox.Size = new System.Drawing.Size(45, 20);
-            this.passportSeriesTextBox.TabIndex = 79;
+            this.passportSeriesTextBox.TabIndex = 15;
             // 
             // academicBindingSource
             // 
@@ -345,7 +345,7 @@
             this.passportPersonalNumberTextBox.Location = new System.Drawing.Point(160, 458);
             this.passportPersonalNumberTextBox.Name = "passportPersonalNumberTextBox";
             this.passportPersonalNumberTextBox.Size = new System.Drawing.Size(200, 20);
-            this.passportPersonalNumberTextBox.TabIndex = 87;
+            this.passportPersonalNumberTextBox.TabIndex = 19;
             // 
             // jobPositionTextBox
             // 
@@ -354,7 +354,7 @@
             this.jobPositionTextBox.Location = new System.Drawing.Point(240, 566);
             this.jobPositionTextBox.Name = "jobPositionTextBox";
             this.jobPositionTextBox.Size = new System.Drawing.Size(228, 20);
-            this.jobPositionTextBox.TabIndex = 91;
+            this.jobPositionTextBox.TabIndex = 22;
             // 
             // iDAcademicTextBox
             // 
@@ -373,7 +373,7 @@
             this.passportIssuedByTextBox.Location = new System.Drawing.Point(26, 412);
             this.passportIssuedByTextBox.Name = "passportIssuedByTextBox";
             this.passportIssuedByTextBox.Size = new System.Drawing.Size(442, 20);
-            this.passportIssuedByTextBox.TabIndex = 85;
+            this.passportIssuedByTextBox.TabIndex = 18;
             // 
             // jobCompanyNameTextBox
             // 
@@ -382,7 +382,7 @@
             this.jobCompanyNameTextBox.Location = new System.Drawing.Point(174, 535);
             this.jobCompanyNameTextBox.Name = "jobCompanyNameTextBox";
             this.jobCompanyNameTextBox.Size = new System.Drawing.Size(294, 20);
-            this.jobCompanyNameTextBox.TabIndex = 89;
+            this.jobCompanyNameTextBox.TabIndex = 21;
             // 
             // insuranceNumberTextBox
             // 
@@ -391,7 +391,7 @@
             this.insuranceNumberTextBox.Location = new System.Drawing.Point(103, 488);
             this.insuranceNumberTextBox.Name = "insuranceNumberTextBox";
             this.insuranceNumberTextBox.Size = new System.Drawing.Size(257, 20);
-            this.insuranceNumberTextBox.TabIndex = 55;
+            this.insuranceNumberTextBox.TabIndex = 20;
             // 
             // passportIssueDateDateTimePicker
             // 
@@ -399,7 +399,7 @@
             this.passportIssueDateDateTimePicker.Location = new System.Drawing.Point(319, 376);
             this.passportIssueDateDateTimePicker.Name = "passportIssueDateDateTimePicker";
             this.passportIssueDateDateTimePicker.Size = new System.Drawing.Size(149, 20);
-            this.passportIssueDateDateTimePicker.TabIndex = 83;
+            this.passportIssueDateDateTimePicker.TabIndex = 17;
             // 
             // fullNameTextBox
             // 
@@ -408,7 +408,7 @@
             this.fullNameTextBox.Location = new System.Drawing.Point(26, 21);
             this.fullNameTextBox.Name = "fullNameTextBox";
             this.fullNameTextBox.Size = new System.Drawing.Size(442, 20);
-            this.fullNameTextBox.TabIndex = 49;
+            this.fullNameTextBox.TabIndex = 1;
             this.fullNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // countryTextBox
@@ -418,7 +418,7 @@
             this.countryTextBox.Location = new System.Drawing.Point(73, 256);
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.Size = new System.Drawing.Size(153, 20);
-            this.countryTextBox.TabIndex = 57;
+            this.countryTextBox.TabIndex = 9;
             // 
             // academicDegreeTextBox
             // 
@@ -427,7 +427,7 @@
             this.academicDegreeTextBox.Location = new System.Drawing.Point(26, 72);
             this.academicDegreeTextBox.Name = "academicDegreeTextBox";
             this.academicDegreeTextBox.Size = new System.Drawing.Size(200, 20);
-            this.academicDegreeTextBox.TabIndex = 51;
+            this.academicDegreeTextBox.TabIndex = 2;
             // 
             // passportNumberTextBox
             // 
@@ -436,7 +436,7 @@
             this.passportNumberTextBox.Location = new System.Drawing.Point(174, 375);
             this.passportNumberTextBox.Name = "passportNumberTextBox";
             this.passportNumberTextBox.Size = new System.Drawing.Size(94, 20);
-            this.passportNumberTextBox.TabIndex = 81;
+            this.passportNumberTextBox.TabIndex = 16;
             // 
             // academicRankTextBox
             // 
@@ -445,7 +445,7 @@
             this.academicRankTextBox.Location = new System.Drawing.Point(268, 72);
             this.academicRankTextBox.Name = "academicRankTextBox";
             this.academicRankTextBox.Size = new System.Drawing.Size(200, 20);
-            this.academicRankTextBox.TabIndex = 53;
+            this.academicRankTextBox.TabIndex = 3;
             // 
             // contractLastDateDateTimePicker
             // 
@@ -453,7 +453,7 @@
             this.contractLastDateDateTimePicker.Location = new System.Drawing.Point(306, 186);
             this.contractLastDateDateTimePicker.Name = "contractLastDateDateTimePicker";
             this.contractLastDateDateTimePicker.Size = new System.Drawing.Size(162, 20);
-            this.contractLastDateDateTimePicker.TabIndex = 77;
+            this.contractLastDateDateTimePicker.TabIndex = 8;
             // 
             // regionTextBox
             // 
@@ -462,7 +462,7 @@
             this.regionTextBox.Location = new System.Drawing.Point(315, 256);
             this.regionTextBox.Name = "regionTextBox";
             this.regionTextBox.Size = new System.Drawing.Size(153, 20);
-            this.regionTextBox.TabIndex = 59;
+            this.regionTextBox.TabIndex = 10;
             // 
             // contractFirstDateDateTimePicker
             // 
@@ -470,7 +470,7 @@
             this.contractFirstDateDateTimePicker.Location = new System.Drawing.Point(90, 186);
             this.contractFirstDateDateTimePicker.Name = "contractFirstDateDateTimePicker";
             this.contractFirstDateDateTimePicker.Size = new System.Drawing.Size(163, 20);
-            this.contractFirstDateDateTimePicker.TabIndex = 75;
+            this.contractFirstDateDateTimePicker.TabIndex = 7;
             // 
             // houseTextBox
             // 
@@ -479,7 +479,7 @@
             this.houseTextBox.Location = new System.Drawing.Point(73, 321);
             this.houseTextBox.Name = "houseTextBox";
             this.houseTextBox.Size = new System.Drawing.Size(153, 20);
-            this.houseTextBox.TabIndex = 65;
+            this.houseTextBox.TabIndex = 13;
             // 
             // contractLoadVolumeTextBox
             // 
@@ -488,7 +488,7 @@
             this.contractLoadVolumeTextBox.Location = new System.Drawing.Point(268, 153);
             this.contractLoadVolumeTextBox.Name = "contractLoadVolumeTextBox";
             this.contractLoadVolumeTextBox.Size = new System.Drawing.Size(156, 20);
-            this.contractLoadVolumeTextBox.TabIndex = 73;
+            this.contractLoadVolumeTextBox.TabIndex = 6;
             // 
             // apartmentTextBox
             // 
@@ -497,7 +497,7 @@
             this.apartmentTextBox.Location = new System.Drawing.Point(315, 321);
             this.apartmentTextBox.Name = "apartmentTextBox";
             this.apartmentTextBox.Size = new System.Drawing.Size(153, 20);
-            this.apartmentTextBox.TabIndex = 67;
+            this.apartmentTextBox.TabIndex = 14;
             // 
             // contractDateDateTimePicker
             // 
@@ -506,7 +506,7 @@
             this.contractDateDateTimePicker.Location = new System.Drawing.Point(268, 122);
             this.contractDateDateTimePicker.Name = "contractDateDateTimePicker";
             this.contractDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.contractDateDateTimePicker.TabIndex = 71;
+            this.contractDateDateTimePicker.TabIndex = 5;
             // 
             // localityTextBox
             // 
@@ -515,7 +515,7 @@
             this.localityTextBox.Location = new System.Drawing.Point(73, 287);
             this.localityTextBox.Name = "localityTextBox";
             this.localityTextBox.Size = new System.Drawing.Size(153, 20);
-            this.localityTextBox.TabIndex = 61;
+            this.localityTextBox.TabIndex = 11;
             // 
             // streetTextBox
             // 
@@ -524,7 +524,7 @@
             this.streetTextBox.Location = new System.Drawing.Point(315, 287);
             this.streetTextBox.Name = "streetTextBox";
             this.streetTextBox.Size = new System.Drawing.Size(153, 20);
-            this.streetTextBox.TabIndex = 63;
+            this.streetTextBox.TabIndex = 12;
             // 
             // contractNumberTextBox
             // 
@@ -533,7 +533,7 @@
             this.contractNumberTextBox.Location = new System.Drawing.Point(94, 121);
             this.contractNumberTextBox.Name = "contractNumberTextBox";
             this.contractNumberTextBox.Size = new System.Drawing.Size(132, 20);
-            this.contractNumberTextBox.TabIndex = 69;
+            this.contractNumberTextBox.TabIndex = 4;
             // 
             // label1
             // 
@@ -556,7 +556,6 @@
             this.tableAdapterManager.DisciplineTableAdapter = null;
             this.tableAdapterManager.GroupTableAdapter = null;
             this.tableAdapterManager.MainJournalTableAdapter = null;
-            this.tableAdapterManager.PhoneNumberTableAdapter = null;
             this.tableAdapterManager.RecordTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApp.JournalDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
@@ -571,7 +570,7 @@
             this.label2.Text = "Домашний адрес:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // FormAcadenic
+            // FormAcademic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -627,7 +626,7 @@
             this.Controls.Add(streetLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormAcadenic";
+            this.Name = "FormAcademic";
             this.Text = "Изменение личных данных";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAcadenic_FormClosing);
             this.Load += new System.EventHandler(this.FormAcadenic_Load);

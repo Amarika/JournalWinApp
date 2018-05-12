@@ -67,6 +67,7 @@ namespace WindowsFormsApp
             {
                 toolStripButton_AddRecord.Visible = false;
                 toolStripButton_RemoveRecord.Visible = false;
+                toolStripButton_Save.Visible = false;
 
                 dataGridView1.ReadOnly = true;
             }
@@ -110,9 +111,8 @@ namespace WindowsFormsApp
 
         private void toolStripButton_AddRecord_Click(object sender, EventArgs e)
         {
-            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-            row.Cells[0].Value = DateTime.Now.Date.ToString("d.M.yy"); ;
-            dataGridView1.Rows.Add(row);
+            var index = dataGridView1.Rows.Add();
+            dataGridView1.Rows[index].Cells[0].Value = DateTime.Now.Date.ToString("d.M.yy"); 
         }
 
         private void toolStripButton_RemoveRecord_Click(object sender, EventArgs e)

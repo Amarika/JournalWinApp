@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class FormAcadenic : Form
+    public partial class FormAcademic : Form
     {
-        public FormAcadenic()
+        public FormAcademic()
         {
             InitializeComponent();
         }
