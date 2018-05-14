@@ -171,6 +171,7 @@
             this.ClientSize = new System.Drawing.Size(515, 342);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAddDiscipline";
             this.Text = "Добавление дисциплины";
             this.Load += new System.EventHandler(this.FormAddDiscipline_Load);

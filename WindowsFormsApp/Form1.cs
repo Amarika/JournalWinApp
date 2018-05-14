@@ -31,15 +31,9 @@ namespace WindowsFormsApp
             }
             else {
 
-                string sqlReq = "select dbo.FunUserIDReturns('" + userName + "','" + userPassword + "')";
+                Properties.Settings.Default.UserID = (int)(queriesTableAdapter1.FunUserIDReturns(userName, userPassword));
 
-                using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
-                {
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand(sqlReq, conn);
-                    Properties.Settings.Default.UserID = (int)cmd.ExecuteScalar();
-
-                    if (Properties.Settings.Default.UserID != 0)
+                if (Properties.Settings.Default.UserID != 0)
                     {
                         Form formJournal = new FormMain();
                         this.Hide();
@@ -49,10 +43,10 @@ namespace WindowsFormsApp
                     }
                     else
                     {
-                        MessageBox.Show("Данный пользователь не наден. Проверьте введенные данные или зарегистрируйте нового пользователя.",
+                        MessageBox.Show("Данный пользователь не найден. Проверьте введенные данные или зарегистрируйте нового пользователя.",
                                         "Ошибка входа", MessageBoxButtons.OK);
                     }
-                }
+                
             }
         }
 

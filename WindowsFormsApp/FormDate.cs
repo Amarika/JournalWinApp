@@ -15,7 +15,6 @@ namespace WindowsFormsApp
         public FormDate()
         {
             InitializeComponent();
-            //FormBorderStyle = FormBorderStyle.None;
         }
 
         private void FormDate_Load(object sender, EventArgs e)

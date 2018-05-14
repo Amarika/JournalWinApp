@@ -27,9 +27,9 @@ D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormReport.resources
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
-D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
-D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\JournalApp.exe
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\JournalApp.pdb
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormAddGroup.resources
 D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormAcademic.resources
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+D:\work\БНТУ\Дипломное проектирование\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete

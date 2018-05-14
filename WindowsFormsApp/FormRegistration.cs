@@ -30,7 +30,7 @@ namespace WindowsFormsApp
 
             if (queriesTableAdapter1.FunUserExist(userName) == 0)
             {
-
+                
                 string sqlReq = "insert dbo.Users values ('" + userName + "','" + userPassword + "')";
 
                 using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.JournalDBConnectionString))
@@ -66,7 +66,7 @@ namespace WindowsFormsApp
             else
             {
                 MessageBox.Show("Пользователь с таким именем уже существует.",
-                                    "Ошибка регтстрации", MessageBoxButtons.OK);
+                                    "Ошибка регистрации", MessageBoxButtons.OK);
             }
         }
     }

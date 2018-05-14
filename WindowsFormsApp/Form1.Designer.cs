@@ -34,6 +34,7 @@
             this.textBox_UserPassword = new System.Windows.Forms.TextBox();
             this.textBox_UserName = new System.Windows.Forms.TextBox();
             this.button_ConStr = new System.Windows.Forms.Button();
+            this.queriesTableAdapter1 = new WindowsFormsApp.JournalDBDataSetTableAdapters.QueriesTableAdapter();
             this.SuspendLayout();
             // 
             // button_Registration
@@ -114,6 +115,7 @@
         private System.Windows.Forms.TextBox textBox_UserPassword;
         private System.Windows.Forms.TextBox textBox_UserName;
         private System.Windows.Forms.Button button_ConStr;
+        private JournalDBDataSetTableAdapters.QueriesTableAdapter queriesTableAdapter1;
     }
 }
 

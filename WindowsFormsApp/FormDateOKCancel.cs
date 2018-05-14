@@ -15,7 +15,6 @@ namespace WindowsFormsApp
         public FormDateOKCancel()
         {
             InitializeComponent();
-           // FormBorderStyle = FormBorderStyle.None;
         }
 
         private void FormDateOKCancel_Load(object sender, EventArgs e)

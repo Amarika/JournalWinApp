@@ -31,23 +31,23 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddGroup));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.journalDBDataSet = new WindowsFormsApp.JournalDBDataSet();
-            this.groupBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.groupTableAdapter = new WindowsFormsApp.JournalDBDataSetTableAdapters.GroupTableAdapter();
-            this.tableAdapterManager = new WindowsFormsApp.JournalDBDataSetTableAdapters.TableAdapterManager();
             this.groupDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolStripButton_Save = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_RemoveRecord = new System.Windows.Forms.ToolStripButton();
+            this.groupBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.journalDBDataSet = new WindowsFormsApp.JournalDBDataSet();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton_AddRecord = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_RemoveRecord = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_Save = new System.Windows.Forms.ToolStripButton();
+            this.groupTableAdapter = new WindowsFormsApp.JournalDBDataSetTableAdapters.GroupTableAdapter();
+            this.tableAdapterManager = new WindowsFormsApp.JournalDBDataSetTableAdapters.TableAdapterManager();
             this.tableLayoutPanel1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.journalDBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.journalDBDataSet)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -64,45 +64,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.10526F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(588, 342);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton_AddRecord,
-            this.toolStripButton_RemoveRecord,
-            this.toolStripButton_Save});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(588, 26);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // journalDBDataSet
-            // 
-            this.journalDBDataSet.DataSetName = "JournalDBDataSet";
-            this.journalDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // groupBindingSource
-            // 
-            this.groupBindingSource.DataMember = "Group";
-            this.groupBindingSource.DataSource = this.journalDBDataSet;
-            // 
-            // groupTableAdapter
-            // 
-            this.groupTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.AcademicTableAdapter = null;
-            this.tableAdapterManager.ActivityTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.DisciplineTableAdapter = null;
-            this.tableAdapterManager.GroupTableAdapter = this.groupTableAdapter;
-            this.tableAdapterManager.MainJournalTableAdapter = null;
-            this.tableAdapterManager.RecordTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = WindowsFormsApp.JournalDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UsersTableAdapter = null;
             // 
             // groupDataGridView
             // 
@@ -142,23 +103,28 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Специальность";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // toolStripButton_Save
+            // groupBindingSource
             // 
-            this.toolStripButton_Save.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Save.Image")));
-            this.toolStripButton_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Save.Name = "toolStripButton_Save";
-            this.toolStripButton_Save.Size = new System.Drawing.Size(148, 23);
-            this.toolStripButton_Save.Text = "Сохранить изменения";
-            this.toolStripButton_Save.Click += new System.EventHandler(this.toolStripButton_Save_Click);
+            this.groupBindingSource.DataMember = "Group";
+            this.groupBindingSource.DataSource = this.journalDBDataSet;
             // 
-            // toolStripButton_RemoveRecord
+            // journalDBDataSet
             // 
-            this.toolStripButton_RemoveRecord.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_RemoveRecord.Image")));
-            this.toolStripButton_RemoveRecord.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_RemoveRecord.Name = "toolStripButton_RemoveRecord";
-            this.toolStripButton_RemoveRecord.Size = new System.Drawing.Size(111, 23);
-            this.toolStripButton_RemoveRecord.Text = "Удалить запись";
-            this.toolStripButton_RemoveRecord.Click += new System.EventHandler(this.toolStripButton_RemoveRecord_Click);
+            this.journalDBDataSet.DataSetName = "JournalDBDataSet";
+            this.journalDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton_AddRecord,
+            this.toolStripButton_RemoveRecord,
+            this.toolStripButton_Save});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(588, 26);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripButton_AddRecord
             // 
@@ -169,6 +135,40 @@
             this.toolStripButton_AddRecord.Text = "Добавить запись";
             this.toolStripButton_AddRecord.Click += new System.EventHandler(this.toolStripButton_AddRecord_Click);
             // 
+            // toolStripButton_RemoveRecord
+            // 
+            this.toolStripButton_RemoveRecord.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_RemoveRecord.Image")));
+            this.toolStripButton_RemoveRecord.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_RemoveRecord.Name = "toolStripButton_RemoveRecord";
+            this.toolStripButton_RemoveRecord.Size = new System.Drawing.Size(111, 23);
+            this.toolStripButton_RemoveRecord.Text = "Удалить запись";
+            this.toolStripButton_RemoveRecord.Click += new System.EventHandler(this.toolStripButton_RemoveRecord_Click);
+            // 
+            // toolStripButton_Save
+            // 
+            this.toolStripButton_Save.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Save.Image")));
+            this.toolStripButton_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_Save.Name = "toolStripButton_Save";
+            this.toolStripButton_Save.Size = new System.Drawing.Size(148, 23);
+            this.toolStripButton_Save.Text = "Сохранить изменения";
+            this.toolStripButton_Save.Click += new System.EventHandler(this.toolStripButton_Save_Click);
+            // 
+            // groupTableAdapter
+            // 
+            this.groupTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.AcademicTableAdapter = null;
+            this.tableAdapterManager.ActivityTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.DisciplineTableAdapter = null;
+            this.tableAdapterManager.GroupTableAdapter = this.groupTableAdapter;
+            this.tableAdapterManager.MainJournalTableAdapter = null;
+            this.tableAdapterManager.RecordTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = WindowsFormsApp.JournalDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsersTableAdapter = null;
+            // 
             // FormAddGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,16 +177,17 @@
             this.ClientSize = new System.Drawing.Size(588, 342);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAddGroup";
             this.Text = "Добавление группы";
             this.Load += new System.EventHandler(this.FormAddGroup_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.journalDBDataSet)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.journalDBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
